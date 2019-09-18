@@ -1,0 +1,7 @@
+app_images:
+    path: /images
+    controller: App\Controller\ImageController::displayImages
+
+app_videos:
+    path: /videos
+    controller: App\Controller\VideoController::displayVideos

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Videos</title>
+    </head>
+    <body>
+        {% for video in videos %}
+          <video src="{{ asset('videos/') }}{{ video }}#t=20" controls width="20%"></video>
+          <a download="{{ video }}" href="{{ asset('videos/') }}{{ video }}" title="{{ video }}">Télécharger </a>
+        {% endfor %}
+    </body>
+</html>
