@@ -156,6 +156,6 @@ class __TwigTemplate_4a18309beeba685535a8a92c74c41ec2b0824a360cbc3f23d0d95d155c5
     <h2>{{ messages[about].title }}</h2>
     <p>{{ messages[about].message }}</p>
 {% endblock %}
-", "@WebProfiler/Profiler/info.html.twig", "/Users/quentin/Documents/my_project/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/info.html.twig");
+", "@WebProfiler/Profiler/info.html.twig", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/info.html.twig");
     }
 }

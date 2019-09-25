@@ -792,6 +792,6 @@ class __TwigTemplate_c3bff7797411b043853afa00e939f7848c2a0f1fb59dc2a18e3949490c9
         </table>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/config.html.twig", "/Users/quentin/Documents/my_project/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
+", "@WebProfiler/Collector/config.html.twig", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/config.html.twig");
     }
 }

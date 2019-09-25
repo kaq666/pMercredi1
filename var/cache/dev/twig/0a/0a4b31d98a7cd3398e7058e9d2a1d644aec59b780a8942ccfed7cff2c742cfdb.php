@@ -885,6 +885,6 @@ class SvgRenderer {
         return element;
     }
 }
-", "@WebProfiler/Collector/time.js", "/Users/quentin/Documents/my_project/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.js");
+", "@WebProfiler/Collector/time.js", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.js");
     }
 }

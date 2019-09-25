@@ -75,6 +75,6 @@ class __TwigTemplate_88f7da24c5833c7e29ad3c3efa38b5ad4a70895a5dc8134045e18cbf9a6
         return new Source("/*
 {{ include('@Twig/Exception/exception.txt.twig', { exception: exception }) }}
 */
-", "@Twig/Exception/exception.js.twig", "/Users/quentin/Documents/my_project/vendor/symfony/twig-bundle/Resources/views/Exception/exception.js.twig");
+", "@Twig/Exception/exception.js.twig", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/vendor/symfony/twig-bundle/Resources/views/Exception/exception.js.twig");
     }
 }

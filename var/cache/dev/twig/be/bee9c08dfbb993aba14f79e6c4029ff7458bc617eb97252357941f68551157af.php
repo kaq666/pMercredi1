@@ -173,6 +173,6 @@ class __TwigTemplate_f78296135b981c5356afd1095b764c7d3d0c10a9a21fc7ab2e897068b8c
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/Applications/MAMP/htdocs/dragon/templates/base.html.twig");
+", "base.html.twig", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/templates/base.html.twig");
     }
 }

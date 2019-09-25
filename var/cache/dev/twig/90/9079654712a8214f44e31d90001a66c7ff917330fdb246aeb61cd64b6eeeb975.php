@@ -95,6 +95,6 @@ class __TwigTemplate_0c646b39bdd9db800843514f35ac0285cd50f64966b4af5fa2676ffb531
             </trace>
 {% endfor %}
         </traces>
-", "@Twig/Exception/traces.xml.twig", "/Users/quentin/Documents/my_project/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
+", "@Twig/Exception/traces.xml.twig", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
     }
 }

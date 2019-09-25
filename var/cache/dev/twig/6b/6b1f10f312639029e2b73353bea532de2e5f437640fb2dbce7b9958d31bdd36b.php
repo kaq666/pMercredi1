@@ -79,6 +79,6 @@ class __TwigTemplate_04c8e0a150e752fa1736d5d435e3e4e19f00470ecd8b35fc22b5c92dfb9
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.js.twig", "/Users/quentin/Documents/my_project/vendor/symfony/twig-bundle/Resources/views/Exception/error.js.twig");
+", "@Twig/Exception/error.js.twig", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/vendor/symfony/twig-bundle/Resources/views/Exception/error.js.twig");
     }
 }

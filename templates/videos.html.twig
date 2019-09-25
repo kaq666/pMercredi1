@@ -5,8 +5,35 @@
         <title>Videos</title>
     </head>
     <body>
+        {% include 'nav.html' %}
+        
+        {% for video in videosPreview %}
+            {% for image in video %}
+                <div class="w3-content w3-section" style="max-width:500px">
+                        <img class="mySlides{{video[0]}}" src="{{ image }}" style="width:100%">
+                </div>
+            {% endfor %}
+
+            <script>
+                var myIndex = 0;
+                carousel{{video[0]|split('.')[0]}}();
+                
+                function carousel{{video[0]|split('.')[0]}}() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides{{video[0]}}");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel{{video[0]|split('.')[0]}}, 2000); // Change image every 2 seconds
+                }
+            </script>
+        {% endfor %}
+
         {% for video in videos %}
-          <video src="{{ asset('videos/') }}{{ video }}#t=20" controls width="20%"></video>
+          <video src="{{ asset('videos/') }}{{ video }}" controls width="20%"></video>
           <a download="{{ video }}" href="{{ asset('videos/') }}{{ video }}" title="{{ video }}">Télécharger </a>
         {% endfor %}
     </body>

@@ -108,6 +108,6 @@ class __TwigTemplate_945596f8a1d4f7f3dfc56dce09701b46fbd28830773687360de22b8dec6
     </exception>
 {% endfor %}
 </error>
-", "@Twig/Exception/exception.xml.twig", "/Users/quentin/Documents/my_project/vendor/symfony/twig-bundle/Resources/views/Exception/exception.xml.twig");
+", "@Twig/Exception/exception.xml.twig", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/vendor/symfony/twig-bundle/Resources/views/Exception/exception.xml.twig");
     }
 }

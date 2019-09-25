@@ -46,8 +46,6 @@ class __TwigTemplate_6053e2d751a034c451837a71ec9f3f8c56d9544e235835dabaa32adcef7
         <meta charset=\"UTF-8\">
         <title>Images</title>
         <style>
-            body {font-family: Arial, Helvetica, sans-serif;}
-            
             img {
               border-radius: 5px;
               cursor: pointer;
@@ -136,6 +134,11 @@ class __TwigTemplate_6053e2d751a034c451837a71ec9f3f8c56d9544e235835dabaa32adcef7
         </style>
     </head>
     <body>
+        ";
+        // line 95
+        $this->loadTemplate("nav.html", "images.html.twig", 95)->display($context);
+        // line 96
+        echo "
         <!-- The Modal -->
         <div id=\"myModal\" class=\"modal\">
             <span class=\"close\">&times;</span>
@@ -222,7 +225,7 @@ class __TwigTemplate_6053e2d751a034c451837a71ec9f3f8c56d9544e235835dabaa32adcef7
 
     public function getDebugInfo()
     {
-        return array (  202 => 132,  177 => 113,  162 => 106,  152 => 105,  148 => 104,  43 => 1,);
+        return array (  205 => 132,  180 => 113,  165 => 106,  155 => 105,  151 => 104,  141 => 96,  139 => 95,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -233,8 +236,6 @@ class __TwigTemplate_6053e2d751a034c451837a71ec9f3f8c56d9544e235835dabaa32adcef7
         <meta charset=\"UTF-8\">
         <title>Images</title>
         <style>
-            body {font-family: Arial, Helvetica, sans-serif;}
-            
             img {
               border-radius: 5px;
               cursor: pointer;
@@ -323,6 +324,8 @@ class __TwigTemplate_6053e2d751a034c451837a71ec9f3f8c56d9544e235835dabaa32adcef7
         </style>
     </head>
     <body>
+        {% include 'nav.html' %}
+
         <!-- The Modal -->
         <div id=\"myModal\" class=\"modal\">
             <span class=\"close\">&times;</span>
@@ -360,6 +363,6 @@ class __TwigTemplate_6053e2d751a034c451837a71ec9f3f8c56d9544e235835dabaa32adcef7
         {% endfor %}
     </body>
 </html>
-", "images.html.twig", "/Users/quentin/Documents/M1/S1/Projet du mercredi/web/templates/images.html.twig");
+", "images.html.twig", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/templates/images.html.twig");
     }
 }

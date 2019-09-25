@@ -482,6 +482,6 @@ class __TwigTemplate_74c07e3e2df63095645cf6a2b1970305624b4982a300f5d0e797d3f511d
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "/Users/quentin/Documents/my_project/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
     }
 }
