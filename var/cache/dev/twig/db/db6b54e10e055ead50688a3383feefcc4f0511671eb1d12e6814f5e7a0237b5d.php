@@ -45,6 +45,10 @@ class __TwigTemplate_6053e2d751a034c451837a71ec9f3f8c56d9544e235835dabaa32adcef7
     <head>
         <meta charset=\"UTF-8\">
         <title>Images</title>
+        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
+        <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\" integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>
         <style>
             img {
               border-radius: 5px;
@@ -135,9 +139,9 @@ class __TwigTemplate_6053e2d751a034c451837a71ec9f3f8c56d9544e235835dabaa32adcef7
     </head>
     <body>
         ";
-        // line 95
-        $this->loadTemplate("nav.html", "images.html.twig", 95)->display($context);
-        // line 96
+        // line 99
+        $this->loadTemplate("nav.html", "images.html.twig", 99)->display($context);
+        // line 100
         echo "
         <!-- The Modal -->
         <div id=\"myModal\" class=\"modal\">
@@ -146,63 +150,70 @@ class __TwigTemplate_6053e2d751a034c451837a71ec9f3f8c56d9544e235835dabaa32adcef7
             <div id=\"caption\"></div>
         </div>
 
-        ";
-        // line 104
+        <div class=\"row\">
+
+          ";
+        // line 110
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["images"]) || array_key_exists("images", $context) ? $context["images"] : (function () { throw new RuntimeError('Variable "images" does not exist.', 104, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["images"]) || array_key_exists("images", $context) ? $context["images"] : (function () { throw new RuntimeError('Variable "images" does not exist.', 110, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-            // line 105
-            echo "        <img id=\"";
+            // line 111
+            echo "            <div class=\"col-lg-3 col-md-4 col-sm-6\">
+
+              <img id=\"";
+            // line 113
             echo twig_escape_filter($this->env, $context["image"], "html", null, true);
             echo "\" src=\"";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/"), "html", null, true);
             echo twig_escape_filter($this->env, $context["image"], "html", null, true);
             echo "\" alt=\"";
             echo twig_escape_filter($this->env, $context["image"], "html", null, true);
-            echo "\" width=\"20%\" height=\"20%\">
-        <a download=\"";
-            // line 106
+            echo "\" width=\"100%\">
+              <a style=\"width: 100%; margin-bottom: 25px;\"class=\"btn btn-primary\" download=\"";
+            // line 114
             echo twig_escape_filter($this->env, $context["image"], "html", null, true);
             echo "\" href=\"";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/"), "html", null, true);
             echo twig_escape_filter($this->env, $context["image"], "html", null, true);
             echo "\" title=\"";
             echo twig_escape_filter($this->env, $context["image"], "html", null, true);
-            echo "\">Télécharger </a>
-        
-        <script>
-            // Get the modal
-            var modal = document.getElementById(\"myModal\");
-            
-            // Get the image and insert it inside the modal - use its \"alt\" text as a caption
-            var img = document.getElementById(\"";
-            // line 113
+            echo "\">Télécharger</a>
+              
+              <script>
+                  // Get the modal
+                  var modal = document.getElementById(\"myModal\");
+                  
+                  // Get the image and insert it inside the modal - use its \"alt\" text as a caption
+                  var img = document.getElementById(\"";
+            // line 121
             echo twig_escape_filter($this->env, $context["image"], "html", null, true);
             echo "\");
-            var modalImg = document.getElementById(\"img01\");
-            var captionText = document.getElementById(\"caption\");
-            img.onclick = function(){
-                modal.style.display = \"block\";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName(\"close\")[0];
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-                modal.style.display = \"none\";
-            }
-        </script>
-
-        ";
+                  var modalImg = document.getElementById(\"img01\");
+                  var captionText = document.getElementById(\"caption\");
+                  img.onclick = function(){
+                      modal.style.display = \"block\";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                  }
+                  
+                  // Get the <span> element that closes the modal
+                  var span = document.getElementsByClassName(\"close\")[0];
+                  
+                  // When the user clicks on <span> (x), close the modal
+                  span.onclick = function() { 
+                      modal.style.display = \"none\";
+                  }
+              </script>
+            </div>
+          ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 132
-        echo "    </body>
+        // line 140
+        echo "
+        </div>
+    </body>
 </html>
 ";
         
@@ -225,7 +236,7 @@ class __TwigTemplate_6053e2d751a034c451837a71ec9f3f8c56d9544e235835dabaa32adcef7
 
     public function getDebugInfo()
     {
-        return array (  205 => 132,  180 => 113,  165 => 106,  155 => 105,  151 => 104,  141 => 96,  139 => 95,  43 => 1,);
+        return array (  214 => 140,  189 => 121,  174 => 114,  165 => 113,  161 => 111,  157 => 110,  145 => 100,  143 => 99,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -235,6 +246,10 @@ class __TwigTemplate_6053e2d751a034c451837a71ec9f3f8c56d9544e235835dabaa32adcef7
     <head>
         <meta charset=\"UTF-8\">
         <title>Images</title>
+        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
+        <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\" integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>
         <style>
             img {
               border-radius: 5px;
@@ -333,36 +348,42 @@ class __TwigTemplate_6053e2d751a034c451837a71ec9f3f8c56d9544e235835dabaa32adcef7
             <div id=\"caption\"></div>
         </div>
 
-        {% for image in images %}
-        <img id=\"{{ image }}\" src=\"{{ asset('images/') }}{{ image }}\" alt=\"{{ image }}\" width=\"20%\" height=\"20%\">
-        <a download=\"{{ image }}\" href=\"{{ asset('images/') }}{{ image }}\" title=\"{{ image }}\">Télécharger </a>
-        
-        <script>
-            // Get the modal
-            var modal = document.getElementById(\"myModal\");
-            
-            // Get the image and insert it inside the modal - use its \"alt\" text as a caption
-            var img = document.getElementById(\"{{ image }}\");
-            var modalImg = document.getElementById(\"img01\");
-            var captionText = document.getElementById(\"caption\");
-            img.onclick = function(){
-                modal.style.display = \"block\";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName(\"close\")[0];
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-                modal.style.display = \"none\";
-            }
-        </script>
+        <div class=\"row\">
 
-        {% endfor %}
+          {% for image in images %}
+            <div class=\"col-lg-3 col-md-4 col-sm-6\">
+
+              <img id=\"{{ image }}\" src=\"{{ asset('images/') }}{{ image }}\" alt=\"{{ image }}\" width=\"100%\">
+              <a style=\"width: 100%; margin-bottom: 25px;\"class=\"btn btn-primary\" download=\"{{ image }}\" href=\"{{ asset('images/') }}{{ image }}\" title=\"{{ image }}\">Télécharger</a>
+              
+              <script>
+                  // Get the modal
+                  var modal = document.getElementById(\"myModal\");
+                  
+                  // Get the image and insert it inside the modal - use its \"alt\" text as a caption
+                  var img = document.getElementById(\"{{ image }}\");
+                  var modalImg = document.getElementById(\"img01\");
+                  var captionText = document.getElementById(\"caption\");
+                  img.onclick = function(){
+                      modal.style.display = \"block\";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                  }
+                  
+                  // Get the <span> element that closes the modal
+                  var span = document.getElementsByClassName(\"close\")[0];
+                  
+                  // When the user clicks on <span> (x), close the modal
+                  span.onclick = function() { 
+                      modal.style.display = \"none\";
+                  }
+              </script>
+            </div>
+          {% endfor %}
+
+        </div>
     </body>
 </html>
-", "images.html.twig", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/templates/images.html.twig");
+", "images.html.twig", "/Users/Pierre/Documents/miage/m1/s1/projet_mercredi/pMercredi1/templates/images.html.twig");
     }
 }

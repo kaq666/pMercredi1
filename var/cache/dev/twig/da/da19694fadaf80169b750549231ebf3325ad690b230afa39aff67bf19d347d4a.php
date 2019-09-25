@@ -104,6 +104,6 @@ class __TwigTemplate_175b17dc7d06375b7c698978fa2c74ef32b0005006096a3e1c130430db9
   {{ include('@Twig/Exception/trace.txt.twig', { trace: trace }, with_context = false) }}
 {% endfor %}
 {% endif %}
-", "@Twig/Exception/traces.txt.twig", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/vendor/symfony/twig-bundle/Resources/views/Exception/traces.txt.twig");
+", "@Twig/Exception/traces.txt.twig", "/Users/Pierre/Documents/miage/m1/s1/projet_mercredi/pMercredi1/vendor/symfony/twig-bundle/Resources/views/Exception/traces.txt.twig");
     }
 }

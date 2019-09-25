@@ -40,11 +40,23 @@ class __TwigTemplate_76bd9c5a0936add264cd2b56b540f2d23f7efce60ea171349fbd0ffd33d
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "nav.html"));
 
         // line 1
-        echo "<h1>Chemise dragon</h1>
-<ul>
-    <li><a class=\"active\" href=\"/images\">Images</a></li>
-    <li><a href=\"/videos\">Videos</a></li>
-</ul>";
+        echo "<nav class=\"navbar navbar-dark bg-primary\">
+  <!-- Navbar content -->
+  <a class=\"navbar-brand\" href=\"/images\">Chemises dragon</a>
+  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+    <span class=\"navbar-toggler-icon\"></span>
+  </button>
+  <div class=\"collapse navbar-collapse\" id=\"navbarText\">
+    <ul class=\"navbar-nav mr-auto\">
+      <li class=\"nav-item active\">
+        <a class=\"nav-link\" href=\"/images\">Chemises <span class=\"sr-only\">(current)</span></a>
+      </li>
+      <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"/videos\">Vidéos</a>
+      </li>
+    </ul>
+  </div>
+</nav>";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -65,10 +77,22 @@ class __TwigTemplate_76bd9c5a0936add264cd2b56b540f2d23f7efce60ea171349fbd0ffd33d
 
     public function getSourceContext()
     {
-        return new Source("<h1>Chemise dragon</h1>
-<ul>
-    <li><a class=\"active\" href=\"/images\">Images</a></li>
-    <li><a href=\"/videos\">Videos</a></li>
-</ul>", "nav.html", "/Users/quentin/Documents/M1/S1/Projet du mercredi/pMercredi1/templates/nav.html");
+        return new Source("<nav class=\"navbar navbar-dark bg-primary\">
+  <!-- Navbar content -->
+  <a class=\"navbar-brand\" href=\"/images\">Chemises dragon</a>
+  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+    <span class=\"navbar-toggler-icon\"></span>
+  </button>
+  <div class=\"collapse navbar-collapse\" id=\"navbarText\">
+    <ul class=\"navbar-nav mr-auto\">
+      <li class=\"nav-item active\">
+        <a class=\"nav-link\" href=\"/images\">Chemises <span class=\"sr-only\">(current)</span></a>
+      </li>
+      <li class=\"nav-item\">
+        <a class=\"nav-link\" href=\"/videos\">Vidéos</a>
+      </li>
+    </ul>
+  </div>
+</nav>", "nav.html", "/Users/Pierre/Documents/miage/m1/s1/projet_mercredi/pMercredi1/templates/nav.html");
     }
 }

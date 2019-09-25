@@ -44,6 +44,8 @@ class VideoController extends AbstractController
             }
             array_push($videosPreview, $myVideo);
         }
+        dump($videos);
+        dump($videosPreview);
 
         return $this->render('videos.html.twig', [
             'videos' => $videos,
